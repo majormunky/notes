@@ -14,7 +14,8 @@ sudo apt install nginx
 ## Python 3.7 Setup
 
 ### Install Libraries
-sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev wget curl
+sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev 
+sudo apt install libssl-dev libreadline-dev libffi-dev wget curl libsqlite3-dev
 
 ### Download Source
 curl -O https://www.python.org/ftp/python/3.7.3/Python-3.7.3.tar.xz
@@ -38,5 +39,4 @@ cd ..
 
 ### Final Steps
 make
-sudo make altinstall
-
+sudo make install

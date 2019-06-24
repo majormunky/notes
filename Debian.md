@@ -4,6 +4,7 @@
 Need to install sudo
 Need to add user to sudoers file
     usermod -aG sudo username
+    apt install sudo
     reboot
 
 ## Nginx Setup
@@ -40,3 +41,14 @@ cd ..
 ### Final Steps
 make
 sudo make install
+
+## Network Setup
+### Static IP
+Edit /etc/network/interfaces
+change dhcp to static
+add lines below
+    address x.x.x.x
+    netmask x.x.x.x
+    gateway x.x.x.x
+
+
